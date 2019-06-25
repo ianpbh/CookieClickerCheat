@@ -1,4 +1,4 @@
-# cookieClickerCheat
+# Cookie Clicker Cheat
 
 This is a script to execute clicks on your Cookie Clicker game. 
 The script includes save and load functions.
