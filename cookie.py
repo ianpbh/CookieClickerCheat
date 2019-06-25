@@ -4,7 +4,7 @@ import os
 
 navegador = webdriver.Firefox()
 navegador.get("https://orteil.dashnet.org/cookieclicker/")
-print("Verificando seu save, por favor não use o site até o menu do script aparecer")
+print("Checking your save file and loading the page, don't use the game page until the menu shows up")
 time.sleep(6)
 if os.path.exists("save.txt"):
     navegador.find_element_by_id('prefsButton').click()
@@ -33,14 +33,14 @@ def sair():
 
 menu = True
 while menu:
-    qnt = input("Digite uma quantidade para clicar, ou 'sair' para sair do script: ")
-    if qnt.upper() == "SAIR":
+    qnt = input("Type the number of clicks, or 'exit' to save and quit the game: ")
+    if qnt.upper() == "EXIT":
             sair()
             menu = False
     elif qnt.isdigit():
             clicaCookie(qnt)
     else:
-        print("Opção inválida\n")
+        print("Invalid option")
 
 
 #<a class="option" onclick="Game.ExportSave();PlaySound('snd/tick.mp3');">Export save</a>
