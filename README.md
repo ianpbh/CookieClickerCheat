@@ -3,7 +3,7 @@
 This is a script to execute clicks on your Cookie Clicker game. 
 The script includes save and load functions.
 
-This project it's just a selenium playing, don't take it to serious lol
+This project it's just a selenium playing, don't take it too serious
 
 Requirements:
   1) Install python if you don't have already installed
